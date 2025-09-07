@@ -1,0 +1,529 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+    --light-gray: #f8f9fa;
+    --white: #fff;
+    --dark-gray: #343a40;
+    --footer-bg: #343a40;
+    --footer-text: #f8f9fa;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    color: var(--white);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee;
+    position: sticky; /* Makes the header stick to the top */
+    top: 0;
+    z-index: 1000; /* Ensures header is above other content */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 10px;
+    border-radius: 50%; /* Makes logo circular if it's a circular image */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8em;
+    color: var(--dark-gray);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: var(--dark-gray);
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default on larger screens */
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-gray);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') no-repeat center center/cover; /* Replace 'hero-bg.jpg' */
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+    height: 60vh; /* Viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+}
+
+section:nth-of-type(even) {
+    background-color: var(--light-gray);
+}
+
+/* About Section */
+#about .about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between image and text */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.about-image {
+    flex: 1; /* Takes up available space */
+    min-width: 300px; /* Ensures image doesn't get too small */
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 1.5; /* Takes more space than image */
+    min-width: 300px;
+}
+
+.about-text h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Academics Section */
+.academics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    text-align: center;
+}
+
+.academic-item {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.academic-icon {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+/* Admissions Section */
+#admissions {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 0;
+}
+
+#admissions h2 {
+    color: var(--white);
+}
+
+#admissions p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+#admissions .btn {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+#admissions .btn:hover {
+    background-color: #e9ecef;
+}
+
+/* News & Events Section */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden; /* Ensures image corners are rounded if they are */
+    display: flex;
+    flex-direction: column;
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+.news-item h3 {
+    margin: 15px 15px 5px 15px;
+    color: var(--primary-color);
+}
+
+.news-item p {
+    margin: 0 15px 10px 15px;
+    flex-grow: 1; /* Allows text to take up available space */
+}
+
+.news-item a {
+    margin: 0 15px 15px 15px;
+    display: block; /* Make the link a block element */
+    text-align: right;
+}
+
+/* Contact Section */
+#contact .contact-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute space */
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.contact-form button {
+    width: auto; /* Button width based on content */
+    padding: 10px 25px;
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: var(--footer-text);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--light-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-wrap: wrap; /* Allow header items to stack */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px; /* Position below the header */
+        left: 0;
+        background-color: var(--white);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Show menu when active */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        display: block; /* Make links block for better touch targets */
+    }
+
+    .menu-toggle {
+        display: block; /* Show hamburger icon on mobile */
+        margin-left: auto; /* Push it to the right */
+    }
+
+    /* Adjustments for hamburger menu icon */
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #hero {
+        padding: 80px 0;
+        height: 50vh;
+    }
+
+    #hero h2 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .about-content,
+    .contact-content {
+        flex-direction: column; /* Stack items on smaller screens */
+        align-items: center;
+    }
+
+    .about-image,
+    .about-text,
+    .contact-info,
+    .contact-form {
+        width: 100%; /* Full width for stacked items */
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        justify-content: center; /* Center contact info */
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+}
+/* Add to your style.css */
+
+#gallery-page {
+    padding: 60px 0;
+}
+
+.gallery-category {
+    margin-bottom: 40px;
+}
+
+.gallery-category h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 1.8em;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item {
+    overflow: hidden; /* Essential for rounded corners/cropping */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative; /* For potential overlays */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Or adjust as needed */
+    object-fit: cover; /* Crucial for uniform image display */
+    display: block; /* Remove extra space below image */
+    transition: transform 0.3s ease;
+}
+
+.gallery-item a {
+    display: block; /* Makes the whole area clickable */
+}
+
+.gallery-item a:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Lightbox styling (if you use a lightbox library like Luminous or Lightbox2) */
+/* You'll need to include the library's CSS and JS files */
+
+/* Example placeholder for lightbox CSS - actual implementation depends on the library */
+/*
+.lightboxOverlay { ... }
+.lightbox { ... }
+.lb-dataContainer { ... }
+*/
+
+/* Responsive adjustments for gallery */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .gallery-item img {
+        height: 150px;
+    }
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our School Name</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Font Awesome for icons (optional, but nice for menus/buttons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <!-- Ensure 'logo.png' is in an 'images' folder or adjust path -->
+                <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\logo.jpeg" alt="School Logo" width="100">
+                <h1>A K S PUBLIC SCHOOL KISUNDASPUR</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Links to other HTML files -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section (Main landing content for index.html) -->
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to Our School</h2>
+            <p>Empowering students for a bright future.</p>
+            <a href="admissions.html" class="btn">Learn More About Admissions</a> <!-- Linking to admissions.html -->
+        </div>
+    </section>
+
+    <!-- You can keep these sections on index.html to give a preview,
+         OR you can remove them if you want each section to be its own dedicated page.
+         If you keep them, ensure they have corresponding IDs in the CSS if you need them styled.
+         However, for a true multi-page structure, you'd typically link to the dedicated pages.
+         Let's keep them here for now to show the structure. -->
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This section will contain information about the school's history, mission, vision, values, and faculty. It's important to tell your school's story and highlight what makes it unique.</p>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Ensure 'school-building.jpg' is in an 'images' folder or adjust path -->
+                    <img src="images/school-building.jpg" alt="School Building" width="400">
+                </div>
+                <div class="about-text">
+                    <h3>Our Mission</h3>
+                    <p>To provide a nurturing and stimulating environment where every student can achieve their full potential academically, socially, and personally.</p>
+                    <h3>Our Vision</h3>
+                    <p>To be a leading educational institution recognized for academic excellence, innovative teaching, and fostering responsible global citizens.</p>
+                    <a href="faculty.html" class="btn">Meet Our Faculty</a> <!-- Linking to faculty.html -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="academics">
+        <div class="container">
+            <h2>Academics</h2>
+            <p>Highlight your curriculum, teaching methods, and academic achievements. You can list different departments or grade levels here.</p>
+            <div class="academics-grid">
+                <div class="academic-item">
+                    <i class="fas fa-book-open academic-icon"></i>
+                    <h3>Curriculum</h3>
+                    <p>Our comprehensive curriculum is designed to challenge and inspire students across all subjects.</p>
+                </div>
+                <div class="academic-item">
+                    <i class="fas fa-chalkboard-teacher academic-icon"></i>
+                    <h3>Teaching Faculty</h3>
+                    <p>Experienced and dedicated educators committed to student success.</p>
+                </div>
+                <div class="academic-item">
+                    <i class="fas fa-award academic-icon"></i>
+                    <h3>Achievements</h3>
+                    <p>Celebrating our students' successes in academics, sports, and arts.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="academics.html" class="btn">Explore Our Academics</a> <!-- Linking to academics.html -->
+            </div>
+        </div>
+    </section>
+
+    <!-- The original 'admissions' section on index.html can serve as a preview -->
+    <section id="admissions">
+        <div class="container">
+            <h2>Admissions</h2>
+            <p>Information on how to apply, requirements, deadlines, and important dates. Make it easy for prospective families to find what they need.</p>
+            <a href="admissions.html" class="btn">Apply Now</a> <!-- Linking to admissions.html -->
+            <a href="admissions.html#prospectus" class="btn btn-secondary">Download Prospectus</a> <!-- Example: Link to a section on admissions page -->
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="container">
+            <h2>News & Events</h2>
+            <p>Stay updated with the latest happenings at our school. This is where you can post announcements, upcoming events, and recent news articles.</p>
+            <div class="news-grid">
+                <div class="news-item">
+                    <!-- Ensure images are in an 'images' folder or adjust path -->
+                    <img src="images/event1.jpg" alt="Event 1">
+                    <h3>Annual Sports Day</h3>
+                    <p>Date: October 26, 2023</p>
+                    <p>A day filled with athletic competitions and school spirit.</p>
+                    <a href="#">Read More</a> <!-- You'd link to a news article page here -->
+                </div>
+                <div class="news-item">
+                    <img src="images/event2.jpg" alt="Event 2">
+                    <h3>Science Fair Results</h3>
+                    <p>Date: November 5, 2023</p>
+                    <p>Congratulations to all our young scientists for their innovative projects!</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="news-item">
+                    <img src="images/event3.jpg" alt="Event 3">
+                    <h3>Parent-Teacher Meeting</h3>
+                    <p>Date: November 15, 2023</p>
+                    <p>An important opportunity for discussion and collaboration.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+             <div style="text-align: center; margin-top: 30px;">
+                <a href="news.html" class="btn">View All News & Events</a> <!-- Assuming you might create a dedicated news page -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact section can stay on index.html or be its own page -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Get in touch with us for any inquiries.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 School Lane, City, State, 12345</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-envelope"></i> info@ourschoolname.edu</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Our School Name. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

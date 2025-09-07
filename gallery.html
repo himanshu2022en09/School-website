@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Our School Name</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your main CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
+
+    <!-- *** IMPORTANT: For a functional lightbox gallery, you'll need to include
+         the CSS and JS files for a lightbox library here.
+         For example, if using Luminous:
+         <link rel="stylesheet" href="css/luminous-basic.min.css">
+         You would also add a script tag for luminous.min.js and initialization code before the closing </body> tag. -->
+
+</head>
+<body>
+
+    <!-- Header Section - Copied from index.html for consistency -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\logo.jpeg" alt="School Logo" width="100">
+                <h1>A K S PUBLIC SCHOOL KISUNDASPUR</h1>
+            </div>
+            <nav>
+                <ul id="nav-menu">
+                    <!-- Links to other HTML files -->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="gallery.html">Gallery</a></li> <!-- Current page -->
+                    <li><a href="faculty.html">Faculty</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Specific Content -->
+    <section id="gallery-page">
+        <div class="container">
+            <h2>School Gallery</h2>
+            <p>A visual journey through the life and activities at our school. Discover moments from sports days, academic events, and daily life.</p>
+
+            <!-- Example: Gallery organized by event -->
+            <div class="gallery-category">
+                <h3>Annual Sports Day 2024</h3>
+                <div class="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <!--
+                            'data-lightbox="sports-day"' groups these images so you can navigate between them.
+                            'href' should point to the full-size image.
+                            'src' should point to a smaller thumbnail version for faster loading.
+                        -->
+                        <a href="images/sports-day-1-large.jpg" data-lightbox="sports-day">
+                            <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\sports day1.jpeg" alt="Students participating in a race at Sports Day">
+                        </a>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <a href="images/sports-day-2-large.jpg" data-lightbox="sports-day">
+                            <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\sp day.jpeg" alt="Award ceremony at Sports Day">
+                        </a>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item">
+                        <a href="images/sports-day-3-large.jpg" data-lightbox="sports-day">
+                            <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\sports1.jpeg" alt="Cheering crowd at Sports Day">
+                        </a>
+                    </div>
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item">
+                        <a href="images/sports-day-4-large.jpg" data-lightbox="sports-day">
+                            <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\std perfn.jpeg" alt="Cheering crowd at Sports Day">
+                        </a>
+                    </div>
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item">
+                        <a href="images/sports-day-5-large.jpg" data-lightbox="sports-day">
+                            <img src="C:\Users\HIMANSHU\OneDrive\Desktop\School Website\images\summer drink.jpeg" alt="Cheering crowd at Sports Day">
+                        </a>
+                    </div>
+
+                    <!-- Add more photos for this event as needed -->
+                    <!-- Make sure each image has descriptive 'alt' text -->
+
+                </div> <!-- /.gallery-grid -->
+            </div> <!-- /.gallery-category -->
+
+            <hr style="margin: 40px auto; width: 60px; border: none; border-top: 2px solid #ddd;"> <!-- Separator -->
+
+            <div class="gallery-category">
+                <h3>Science Fair 2023</h3>
+                <div class="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <a href="images/science-fair-1-large.jpg" data-lightbox="science-fair">
+                            <img src="images/thumbs/science-fair-1-thumb.jpg" alt="Student presenting a science project">
+                        </a>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <a href="images/science-fair-2-large.jpg" data-lightbox="science-fair">
+                            <img src="images/thumbs/science-fair-2-thumb.jpg" alt="Close-up of a science experiment">
+                        </a>
+                    </div>
+
+                    <!-- Add more photos for this event -->
+
+                </div> <!-- /.gallery-grid -->
+            </div> <!-- /.gallery-category -->
+
+            <hr style="margin: 40px auto; width: 60px; border: none; border-top: 2px solid #ddd;"> <!-- Separator -->
+
+            <div class="gallery-category">
+                <h3>Campus Life</h3>
+                <div class="gallery-grid">
+
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item">
+                        <a href="images/campus-life-1-large.jpg" data-lightbox="campus-life">
+                            <img src="images/thumbs/campus-life-1-thumb.jpg" alt="Students in the library">
+                        </a>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item">
+                        <a href="images/campus-life-2-large.jpg" data-lightbox="campus-life">
+                            <img src="images/thumbs/campus-life-2-thumb.jpg" alt="Children playing in the school yard">
+                        </a>
+                    </div>
+
+                    <!-- Add more photos -->
+
+                </div> <!-- /.gallery-grid -->
+            </div> <!-- /.gallery-category -->
+
+        </div> <!-- /.container -->
+    </section>
+
+    <!-- Footer Section - Copied from index.html for consistency -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Our School Name. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- *** IMPORTANT: Lightbox Library Integration (Example using Luminous) *** -->
+    <!--
+    <script src="js/luminous.min.js"></script>
+    <script>
+        // Initialize Luminous for all gallery items
+        new LuminousGallery('.gallery-grid a', {
+            // Optional: Add custom options here if your lightbox library supports them
+            // For example, to enable navigation:
+            // arrow: true
+        });
+    </script>
+    -->
+
+</body>
+</html>
